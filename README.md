@@ -3,7 +3,7 @@
 1) Из Maven package получаем .war
 2) .war кладем в папку webapps внутри Tomcat 
 3) Запускаем Tomcat
-4) http://localhost:8080/main
+4) http://localhost:8080/
 5) ???
 6) Готово! Вы восхитительны :relaxed:
 
