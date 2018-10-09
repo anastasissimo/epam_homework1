@@ -27,7 +27,7 @@ function getXMLHttpRequest() {
 /*
  * AJAX call starts with this function
  */
-function makeRequest1() {
+function tryGetInfo() {
     var xmlHttpRequest = getXMLHttpRequest();
     xmlHttpRequest.onreadystatechange = getReadyStateHandler1(xmlHttpRequest);
     xmlHttpRequest.open("GET", "main", true);
@@ -36,7 +36,7 @@ function makeRequest1() {
     xmlHttpRequest.send(null);
 }
 
-function makeRequest2() {
+function tryPostInfo() {
     var xmlHttpRequest = getXMLHttpRequest();
     xmlHttpRequest.onreadystatechange = getReadyStateHandler2(xmlHttpRequest);
     xmlHttpRequest.open("POST", "main", false);
@@ -45,7 +45,7 @@ function makeRequest2() {
     xmlHttpRequest.send(null);
 }
 
-function makeRequest3() {
+function tryPutInfo() {
     var xmlHttpRequest = getXMLHttpRequest();
     xmlHttpRequest.onreadystatechange = getReadyStateHandler3(xmlHttpRequest);
     xmlHttpRequest.open("PUT", "main", false);
@@ -54,7 +54,7 @@ function makeRequest3() {
     xmlHttpRequest.send(null);
 }
 
-function makeRequest4() {
+function tryDeleteInfo() {
     var xmlHttpRequest = getXMLHttpRequest();
     xmlHttpRequest.onreadystatechange = getReadyStateHandler4(xmlHttpRequest);
     xmlHttpRequest.open("DELETE", "main", false);
