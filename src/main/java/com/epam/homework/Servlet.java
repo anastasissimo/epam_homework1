@@ -17,7 +17,7 @@ public class Servlet extends HttpServlet {
         String newState="1";
         state += newState;
         res.setContentType("text/html");
-        res.getWriter().write("<div id=\"post\"><button style=\"background-color: #1E90FF;border-radius: 5px\" type=\"button\" onclick=\"makeRequest2()\">Post</button></div>\n");
+        res.getWriter().write("<div id=\"post\"><button style=\"background-color: #1E90FF;border-radius: 5px\" type=\"button\" onclick=\"tryPostInfo()\">Post</button></div>\n");
         res.getWriter().write("State:"+" "+state+"<br/>");
         printCookies(req,res);
 
@@ -27,7 +27,7 @@ public class Servlet extends HttpServlet {
             throws java.io.IOException {
         String newState="2";
         state += newState;
-        res.getWriter().write("<div id=\"get\"><button style=\"background-color: #1E90FF;border-radius: 5px\" type=\"button\" onclick=\"makeRequest1()\">Get</button></div>\n");
+        res.getWriter().write("<div id=\"get\"><button style=\"background-color: #1E90FF;border-radius: 5px\" type=\"button\" onclick=\"tryGetInfo()\">Get</button></div>\n");
         res.getWriter().write("State:"+" "+state+"<br/>");
         printCookies(req,res);
 
@@ -37,7 +37,7 @@ public class Servlet extends HttpServlet {
             throws java.io.IOException {
         String newState="3";
         state += newState;
-        res.getWriter().write("<div id=\"put\"><button style=\"background-color: #1E90FF;border-radius: 5px\" type=\"button\" onclick=\"makeRequest3()\">Put</button></div>\n");
+        res.getWriter().write("<div id=\"put\"><button style=\"background-color: #1E90FF;border-radius: 5px\" type=\"button\" onclick=\"tryPutInfo()\">Put</button></div>\n");
         res.getWriter().write("State:"+" "+state+"<br/>");
         printCookies(req,res);
 
@@ -47,7 +47,7 @@ public class Servlet extends HttpServlet {
             throws java.io.IOException {
         String newState = "4";
         state += newState;
-        res.getWriter().write("<div id=\"delete\"><button style=\"background-color: #1E90FF;border-radius: 5px\" type=\"button\" onclick=\"makeRequest4()\">Delete</button></div>\n");
+        res.getWriter().write("<div id=\"delete\"><button style=\"background-color: #1E90FF;border-radius: 5px\" type=\"button\" onclick=\"tryDeleteInfo()\">Delete</button></div>\n");
         res.getWriter().write("State:"+" "+state+"<br/>");
         printCookies(req,res);
     }
